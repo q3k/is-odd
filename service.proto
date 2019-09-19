@@ -1,0 +1,21 @@
+syntax = "proto3";
+option go_package = "proto";
+
+package isodd;
+
+service IsOdd {
+    rpc IsOdd(IsOddRequest) returns (IsOddResponse);
+}
+
+message IsOddRequest {
+    int64 number = 1;
+}
+
+message IsOddResponse {
+    enum Result {
+        RESULT_UNKNOWN = 0;
+        RESULT_ODD = 1;
+        RESULT_NON_ODD = 2;
+    };
+    Result result = 1;
+}
