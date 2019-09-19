@@ -4,7 +4,7 @@ import (
 	"context"
 	"testing"
 
-	pb "github.com/q3k/is-odd/proto"
+	pb "github.com/q3k/is-odd/proto/is-odd"
 )
 
 func TestIsOdd(t *testing.T) {
